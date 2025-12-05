@@ -1,0 +1,17 @@
+<launch>
+
+  <!-- TurtleBot3 Modell -->
+  <env name="TURTLEBOT3_MODEL" value="waffle_pi"/>
+
+  <!-- 1: Gazebo Empty World -->
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" />
+
+  <!-- 2: Navigation (inkl. map_server und RViz) -->
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="$(env HOME)/foyer_try1.yaml" />
+  </include>
+
+  <!-- 3: Movement API -->
+  <node pkg="movement_api" type="movement_server.py" name="movement_server" output="screen"/>
+
+</launch>
