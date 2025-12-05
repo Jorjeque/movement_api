@@ -9,7 +9,7 @@ Das Package kann sowohl in der Simulation (Gazebo) als auch auf dem echten
 Roboter genutzt werden
 
 
-mit diesen Befeheln im terminal wird die Ordnerstruktur aus Github lokal gespeichert und der workspace neu gebaut
+mit diesen Befeheln im terminal wird die Ordnerstruktur aus Github lokal gespeichert und der workspace neu gebaut. Eventuell muss die ordnerstruktur in Windows/mac heruntergeladen werden wenn keine verbindung zum repository möglich ist. Dann einfach in ubuntu kopieren und den catkin make befehle ausführen
 
 cd ~/catkin_ws/src
 git clone https://github.com/Jorjeque/movement_api.git
